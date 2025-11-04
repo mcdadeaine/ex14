@@ -1,6 +1,13 @@
+.antic-didone-regular {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,7 +26,7 @@ header, footer{
   text-align: center;
   min-width: 500px;
   height: 50px;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 75px 0;
   background-color: #fff;
   color: black;
 }
@@ -29,19 +36,58 @@ header, footer{
   font-weight: 550;
   padding: 10px;
   letter-spacing: 4px;
-  font-family: "Didot", serif;
+  font-family: "Antic Didone", serif;
   font-style: normal;
+  text-transform: uppercase;
 }
 
-footer p {
-  font-size: .8rem;
+.jellyfish h2 {
+  font-size: 28px;
+  font-family: "Antic Didone", serif;
+  color: black;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
 }
 
-img {
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.jellyfish {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.jellyfish:hover {
+  transform: scale(1.02); transition: all 0.3s ease; 
+}
+
+.jellyfish img {
   width: 100%;
-  height: auto;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.bear {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.rank {
+  font-weight: bold;
+  color: #c40e41;
+  margin-bottom: 0.75rem;
+  font-size: 20px;
+}
+
+.description {
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  line-height: 1.5;
 }

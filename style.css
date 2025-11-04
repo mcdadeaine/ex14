@@ -32,13 +32,13 @@ header, footer{
 }
 
 .navLogo {
-  font-size: 35px;
-  font-weight: 550;
+  font-size: 37px;
   padding: 10px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-family: Helvetica, sans-serif;
   font-style: normal;
   text-transform: uppercase;
+  color: #c40e41;
 }
 
 .jellyfish h2 {
